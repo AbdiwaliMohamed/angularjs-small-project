@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="utf8">
+    <title>AngularJS Application</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="angular.min.js"></script>
+    <script>
+        var app=angular.module("myApp",[])
+        app.controller("myCtrl",function ($scope,$rootScope) {
+
+        })
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="row">
+<div style="width: 50%; height: 100%" class="col-lg-6   {{red?'bg-danger':''}}">
+<div class="checkbox">
+   <label><input type="checkbox" ng-model="red">Red</label>
+</div>
+</div>
+<div style="width: 50%; height:100%" class="col-lg-6  {{blue?'bg-info':''}}">
+    <div class="checkbox">
+        <label><input type="checkbox" ng-model="blue">blue</label>
+    </div>
+</div>
+</div>
+</body>
+</html>
